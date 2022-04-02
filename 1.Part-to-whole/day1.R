@@ -21,8 +21,7 @@ day1data = day1data %>%
   mutate(total = sum(Population)) %>%
   mutate(freq = Population / total) %>%
   mutate(percent = freq * 100) %>%
-  mutate(label = paste(day1data$Country, paste(round(day1data$percent, 2), "%"), sep =
-                         "-"))
+  mutate(label = paste(day1data$Country, paste(round(day1data$percent, 2), "%"), sep ="-"))
 
 day1data$label = factor(
   day1data$label,
