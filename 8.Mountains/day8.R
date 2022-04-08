@@ -22,7 +22,7 @@ for (i in colnames(dolomites_data)) {
   
 }
 
-
+#plot
 p = ggplot(dolomites_data, aes(x = year)) +
   geom_area(aes(y = total_snowfall),
             fill = "#dfdcdb") +
