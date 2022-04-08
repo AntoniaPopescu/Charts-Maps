@@ -63,7 +63,7 @@ p = ggplot(dolomites_data, aes(x = year)) +
   geom_label(x = 2020,
              y = 220,
              label = "Average Base Snow Depth",
-             fill = "#565654") +
+             fill = "#696969") +
   theme_minimal() +
   scale_x_continuous(breaks = dolomites_data$year) +
   ylab("Snowfall (cm)") +
